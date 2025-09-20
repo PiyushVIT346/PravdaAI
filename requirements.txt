@@ -11,5 +11,5 @@ pypdf
 faiss-cpu
 google-generativeai
 gunicorn
-
+sentence-transformers 
 
