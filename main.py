@@ -883,4 +883,4 @@ if __name__ == '__main__':
         raise ValueError("GEMINI_API_KEY environment variable is required")
     
     app = create_app(gemini_api_key)
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0')
