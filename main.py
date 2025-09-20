@@ -15,7 +15,7 @@ import hashlib
 import os
 from datetime import datetime
 from functools import wraps
-import google.generativeai as genai
+import google.generativeai 
 from langchain_google_genai import GoogleGenerativeAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
@@ -239,7 +239,7 @@ class LegalAIAssistant:
         if not gemini_api_key:
             raise ValueError(" GEMINI_API_KEY is required")
         
-        genai.configure(api_key=gemini_api_key)
+        google.generativeai.configure(api_key=gemini_api_key)
         self.llm = GoogleGenerativeAI(
             model="gemini-2.0-flash-lite",
             api_key=gemini_api_key,
