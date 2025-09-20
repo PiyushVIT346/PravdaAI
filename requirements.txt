@@ -9,5 +9,7 @@ requests
 beautifulsoup4
 pypdf
 faiss-cpu
+google-generativeai
 gunicorn
+
 
